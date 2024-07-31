@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.UpdateController">
+    <children>
+        <fx:include source="MENU.fxml"/>
+        <Label alignment="CENTER" layoutX="296.0" layoutY="14.0" prefHeight="44.0" prefWidth="209.0" text="게시판 수정 ">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="172.0" layoutY="85.0" prefHeight="24.0" prefWidth="65.0" text="제목 : ">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="157.0" layoutY="144.0" prefHeight="33.0" prefWidth="83.0" text="작성자 :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="124.0" layoutY="198.0" prefHeight="33.0" prefWidth="113.0" text="작성일자 :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="166.0" layoutY="267.0" prefHeight="24.0" prefWidth="65.0" text="내용 :">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfTitle" layoutX="255.0" layoutY="80.0" prefHeight="43.0" prefWidth="320.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfWriter" layoutX="255.0" layoutY="139.0" prefHeight="29.0" prefWidth="209.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="tfDate" editable="false" layoutX="255.0" layoutY="195.0" prefHeight="29.0" prefWidth="209.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextField>
+        <TextArea fx:id="taContent" layoutX="255.0" layoutY="267.0" prefHeight="225.0" prefWidth="502.0" />
+        <Button layoutX="255.0" layoutY="529.0" mnemonicParsing="false" onAction="#movetoPrev" text="&lt;-Prev" />
+        <Button layoutX="474.0" layoutY="529.0" mnemonicParsing="false" onAction="#movetoUpdate" text="Update" />
+        <Button layoutX="372.0" layoutY="529.0" mnemonicParsing="false" onAction="#movetoList" text="List to" />
+        <Button layoutX="698.0" layoutY="529.0" mnemonicParsing="false" onAction="#movetoNext" text="Next-&gt;" />
+        <Button layoutX="591.0" layoutY="529.0" mnemonicParsing="false" onAction="#movetoDelete" text="Delete" />
+    </children>
+</AnchorPane>

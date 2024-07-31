@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.Controller">
+   <children>
+       <fx:include source="MENU.fxml"/>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="800.0" text="Board List">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="boardTableView" layoutX="181.0" layoutY="57.0" prefHeight="354.0" prefWidth="597.0">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="42.0" text="No" />
+          <TableColumn fx:id="colTitle" prefWidth="129.0" text="Title" />
+            <TableColumn fx:id="colWriter" prefWidth="69.0" text="Writer" />
+            <TableColumn fx:id="colRegDate" prefWidth="176.0" text="Reg_Date" />
+            <TableColumn fx:id="colUpdDate" prefWidth="177.0" text="Upd_Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="181.0" layoutY="480.0" mnemonicParsing="false" onAction="#moveToinsert" prefHeight="29.0" prefWidth="108.0" text="Write" />
+      <Button layoutX="670.0" layoutY="480.0" mnemonicParsing="false" onAction="#close" prefHeight="29.0" prefWidth="108.0" text="Close" />
+      <Pagination fx:id="pagination" layoutX="380.0" layoutY="411.0" prefHeight="58.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

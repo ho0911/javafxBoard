@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.RegisterController">
+   <children>
+      <Label layoutX="322.0" layoutY="47.0" text="Register">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="136.0" text="ID :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="179.0" text="User Name :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="222.0" text="Password :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="265.0" text="Password(re) :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="257.0" layoutY="407.0" mnemonicParsing="false" onAction="#register" text="Join">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="440.0" layoutY="407.0" mnemonicParsing="false" onAction="#gotoLogin" text="Go to Login">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfId" layoutX="336.0" layoutY="140.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfUsername" layoutX="335.0" layoutY="183.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="tfPw" layoutX="336.0" layoutY="229.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="tfpwRe" layoutX="336.0" layoutY="272.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

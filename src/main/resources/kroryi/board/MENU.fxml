@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.MenuController">
+   <children>
+      <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="135.0" text="Button" />
+      <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="135.0" text="Button" />
+      <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="135.0" text="Button" />
+      <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="135.0" text="Button" />
+      <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="135.0" text="Button" />
+   </children>
+</VBox>

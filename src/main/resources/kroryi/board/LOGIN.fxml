@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="49.0" prefHeight="58.0" prefWidth="800.0" styleClass="title-label" stylesheets="@style.css" text="Login">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="150.0" text="ID :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="203.0" text="PW :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfId" layoutX="333.0" layoutY="154.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="tfPw" layoutX="333.0" layoutY="207.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="333.0" layoutY="377.0" mnemonicParsing="false" onAction="#login" stylesheets="@style.css" text="Login">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="377.0" mnemonicParsing="false" onAction="#gotoRegister" text="Register">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

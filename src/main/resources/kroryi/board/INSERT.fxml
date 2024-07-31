@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kroryi.board.controller.InsertController">
+   <children>
+      <Button layoutX="182.0" layoutY="554.0" mnemonicParsing="false" onAction="#moveToList" text="List to" />
+      <Label contentDisplay="CENTER" layoutX="332.0" layoutY="27.0" text="Board Write">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="96.0" text="Title">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" layoutX="182.0" layoutY="94.0" prefHeight="43.0" prefWidth="437.0" promptText="제목을 입력하세요.">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label layoutX="89.0" layoutY="156.0" text="Writer">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="214.0" text="Content">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfWriter" layoutX="182.0" layoutY="154.0" prefHeight="43.0" prefWidth="209.0" promptText="작성자를 입력하세요.">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="taContent" layoutX="182.0" layoutY="214.0" prefHeight="290.0" prefWidth="437.0" promptText="내용을 입력하세요.">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="564.0" layoutY="554.0" mnemonicParsing="false" onAction="#insert" text="Insert" />
+   </children>
+</AnchorPane>
